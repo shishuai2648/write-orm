@@ -1,4 +1,4 @@
-package common.utils;
+package javax.core.common.utils;
 
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
@@ -44,7 +44,7 @@ public class StringUtils {
 			int index = Integer.parseInt(m.group(1));
 			if (index < args.length) {
 				result = result.replace(m.group(),
-						ObjectUtils.notNull(args[index], "").toString());
+						common.utils.ObjectUtils.notNull(args[index], "").toString());
 			}
 		}
 		return result;

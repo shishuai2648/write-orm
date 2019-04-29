@@ -1,7 +1,7 @@
 package com.ss.framework;
 
 
-import common.utils.StringUtils;
+
 import org.apache.commons.lang.ArrayUtils;
 
 import java.util.ArrayList;
@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import com.ss.framework.QueryRule.Rule;
+
+import javax.core.common.utils.StringUtils;
 
 /**
  *      根据规则生成规则

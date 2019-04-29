@@ -1,4 +1,4 @@
-package common.utils;
+package javax.core.common.utils;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

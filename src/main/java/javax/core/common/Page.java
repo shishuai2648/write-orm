@@ -1,4 +1,4 @@
-package common;
+package javax.core.common;
 
 import java.io.Serializable;
 import java.util.ArrayList;

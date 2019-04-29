@@ -12,6 +12,11 @@ import javax.sql.DataSource;
 public class MemberDao extends BaseDaoSupport {
 
     @Override
+    protected String getPKColumn() {
+        return null;
+    }
+
+    @Override
     @Resource
     protected void setDataSource(DataSource dataSource) {
         System.out.println(dataSource);

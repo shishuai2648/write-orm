@@ -1,4 +1,4 @@
-package common.utils;
+package javax.core.common.utils;
 
 
 
