@@ -44,7 +44,7 @@ public class StringUtils {
 			int index = Integer.parseInt(m.group(1));
 			if (index < args.length) {
 				result = result.replace(m.group(),
-						common.utils.ObjectUtils.notNull(args[index], "").toString());
+						ObjectUtils.notNull(args[index], "").toString());
 			}
 		}
 		return result;

@@ -1,5 +1,13 @@
 spring:
   datasource:
-    url: jdbc:mysql://47.104.73.86:3306/test?characterEncoding=UTF-8&rewriteBatchedStatements=true
-    name: root
-    password: 123
+    druid:
+      write:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://47.104.73.86:3306/test_write?characterEncoding=UTF-8&rewriteBatchedStatements=true
+        username: root
+        password: 123
+      read:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://47.104.73.86:3306/test?characterEncoding=UTF-8&rewriteBatchedStatements=true
+        username: root
+        password: 123

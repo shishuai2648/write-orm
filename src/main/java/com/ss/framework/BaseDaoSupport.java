@@ -109,7 +109,7 @@ public abstract class BaseDaoSupport<T extends Serializable, PK extends Serializ
 
     protected void setDataSourceWrite(DataSource dataSourceWrite) {
         this.dataSourceWrite = dataSourceWrite;
-        jdbcTemplateWrite = new JdbcTemplate(dataSourceWrite);
+         jdbcTemplateWrite = new JdbcTemplate(dataSourceWrite);
     }
 
     protected void setDataSourceReadOnly(DataSource dataSourceReadOnly) {
