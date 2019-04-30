@@ -4,6 +4,8 @@ import java.awt.datatransfer.FlavorEvent;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test2 {
 
@@ -19,7 +21,7 @@ public class Test2 {
                 File file = new File(targetRootPath + "\\" + srcFile.getAbsolutePath().replace(rootPath, "").replace("\\","  "));
                 Files.copy(srcFile.toPath(),file.toPath());
             }
-        }else {
+        } else {
             for( File src : srcFile.listFiles() ){
                 copyFile(src,targetRootPath,rootPath);
             }
